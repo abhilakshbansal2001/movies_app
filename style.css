@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    top: 0;
+    position: relative;
+ 
+    font-weight: 700;
+    text-align: left;
+    box-shadow:  -4px 0px 5px rgba(0, 0, 0, 0.4) ;
+    padding: 1rem 0;
+    
+}
+.heading{
+    padding-left: 0em!important;
+}
+.heading h1{
+    font-size: 30px!important;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding-left: 0rem!important; */
+    margin: 0em;
+}
+.search-div{
+    position: relative;
+}
+.search {
+    width: 300px;
+    padding:8px;
+    border: none;
+    box-shadow: 0 0px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding-left: 2.8rem;
+    border-radius: 4px;
+}
+.search:focus,#filter:focus{
+    outline: none;
+
+}
+.btn:focus,
+.btn:active{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.search-div button {
+    cursor: pointer;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.4);
+    
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+}
+
+#filter {
+    padding: 8px 10px;
+    border-radius: 4px;
+    width: 160px;
+    border: none;
+    box-shadow: 0 0px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* ############# sample card #################3 */
+
+.card *{
+    display: inline-block;
+    margin: 0!important;
+
+   
+}
+.card{
+    margin: 15px 0;
+    outline: none!important;
+    border: none;
+    cursor: pointer;
+    max-width: 250px;
+    /* min-height: 300px; */
+    /* max-height: 40vh; */
+    border-radius: 23px;
+background: #ffffff;
+box-shadow:  28px 28px 57px #d6d6d6;
+             /* -28px -28px 57px #ffffff; */
+    padding: 0!important;
+}
+.image-card {
+    width: 100%;
+    height: 70%;
+}
+.image-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 23px ;
+    border-top-right-radius: 23px ;
+
+
+}
+
+.information-card {
+    padding: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.information-card h3{
+    font-size: 20px;
+    margin-bottom: 1.4rem!important;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.information-card h4{
+    font-size: 12px;
+    font-weight: 600;
+}
+.information-card p{
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+/* #################### second page ##############33 */
+
+.myButton {
+    box-shadow: 0px 3px 8px -5px #080c0d;
+    background-color:#ffffff;
+
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:Arial;
+    font-size:20px;
+
+    padding:13px 32px;
+    text-decoration:none;
+
+    }
+    .myButton:hover {
+    background-color:#ffffff;
+    color: rgba(0,0,0,0.78);
+    text-decoration: none;
+    transform: scale(0.99);
+    }
+    .myButton:active {
+    position:relative;
+    top:1px;
+    }
+    .flag-div{
+      width: 100%;
+
+    }
+    .flag{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .country-name{
+      font-size: 30px;
+      font-weight: 700;
+
+
+    }
+    .second-page-list{
+      list-style-type: none;
+
+    }
+    li h3 {
+      display: inline-block!important;
+      font-size: 15px;
+    }
+    li p{
+      display: inline-block!important;
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 5px
+    }
+    .border-div h3 {
+      font-size: 13px;
+      font-weight: 700;
+      display: inline-block;
+    }
+    .border-div span{
+      font-size: 10px;
+      display: inline-block;
+      margin: 10px 5px;
+      line-height: 1.5;
+      box-shadow: 0 1px 4px #D3D3D3;
+      border-radius: 4px;
+      padding: 5px;
+      /* border:1px solid rgba(0, 0, 0, 0.2); */
+    }
+
+    .content-bar{
+        flex-wrap: wrap!important;
+    }
+/* ######################3 second page ends #################### */
+
+@media (max-width:900px){
+    .search{
+        transform: scale(0.95);
+        width: 200px;
+    }
+    #filter{
+        text-align: left;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+}
